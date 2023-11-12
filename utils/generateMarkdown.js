@@ -2,13 +2,15 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license === 'MIT') {
-    return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+    return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]';
   } else if (license === 'Apache 2.0') {
     return '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
   } else if (license === 'GPL 3.0') {
     return '(https://img.shields.io/badge/License-GPL%203.0-blue.svg)';
+  } else if (license === 'BSD 2-Clause') {
+    return '[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)]';
   } else if (license === 'BSD 3-Clause') {
-    return '(https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)';
+    return '[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)]';
   } else {
     return '';
   }}
@@ -16,13 +18,15 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license){
   if (license === 'MIT') {
-    return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+    return '(https://opensource.org/licenses/MIT)';
   } else if (license === 'Apache 2.0') {
-    return '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
+    return '(https://opensource.org/licenses/Apache-2.0)';
   } else if (license === 'GPL 3.0') {
     return '(https://img.shields.io/badge/License-GPL%203.0-blue.svg)';
+  } else if (license === 'BSD 2-Clause') {
+    return '(https://opensource.org/licenses/BSD-3-Clause)';
   } else if (license === 'BSD 3-Clause') {
-    return '(https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)';
+    return '(https://opensource.org/licenses/BSD-3-Clause)';
   } else {
     return '';
   }}
